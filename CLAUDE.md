@@ -55,6 +55,12 @@ All tuning constants are at the top of the `<script>` block (arena size, player 
 3. Add entry to `BOSS_DEFS` array with `{ name, tier, cls }`
 4. Add collision handling in `checkCollisions()` if the boss has unique collidable elements (orbs, clones, etc.)
 
+## Deployment
+
+- **GitHub repo:** pushed to `origin/master`
+- **GitHub Pages:** workflow at `.github/workflows/deploy.yml` auto-deploys on push to `master`
+- **Netlify:** also deployed to Netlify (connected separately)
+
 ## Rendering
 
 Uses Canvas 2D with `shadowBlur` for neon glow effects. Arena is fixed 1200x800, scaled to fit the viewport via CSS. All coordinates are in arena space.
